@@ -1,0 +1,44 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contentDropDown {
+    display: flex;
+   /* height: 0;*/
+    flex-direction: column;
+    border: black solid 1px;
+    width: 150px;
+    padding: 0 10px;
+    transition: height ease 0.5s;
+    overflow: hidden;
+}
+
+#contentDropDown a {
+    padding: 5px;
+}
+
+#contentDropDown.show {
+    height: 150px;
+}
+
+#btnDropDown {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btnDropDown div{
+    width: 30px;
+    height: 1px;
+    background-color: black;
+    margin: 2px;
+    padding: 2px;
+}
+
